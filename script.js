@@ -11,55 +11,6 @@ $('.bx-promoSlider').bxSlider({
     controls: false,
     pager: false,
 });
-let brandSlider1 = $('.bx-brandSlider1').bxSlider({
-    auto: true,
-    pause: 3000,
-    controls: false,
-    pager: false,
-    slideMargin: 24,
-});
-let brandSlider2 = $('.bx-brandSlider2').bxSlider({
-    auto: true,
-    pause: 3000,
-    controls: false,
-    pager: false,
-    slideMargin: 24,
-});
-let brandSlider3 = $('.bx-brandSlider3').bxSlider({
-    auto: true,
-    pause: 3000,
-    controls: false,
-    pager: false,
-    slideMargin: 24,
-});
-let brandSlider4 = $('.bx-brandSlider4').bxSlider({
-    auto: true,
-    pause: 3000,
-    controls: false,
-    pager: false,
-    slideMargin: 24,
-});
-let brandSlider5 = $('.bx-brandSlider5').bxSlider({
-    auto: true,
-    pause: 3000,
-    controls: false,
-    pager: false,
-    slideMargin: 24,
-});
-let brandSlider6 = $('.bx-brandSlider6').bxSlider({
-    auto: true,
-    pause: 3000,
-    controls: false,
-    pager: false,
-    slideMargin: 24,
-});
-let brandSlider7 = $('.bx-brandSlider7').bxSlider({
-    auto: true,
-    pause: 3000,
-    controls: false,
-    pager: false,
-    slideMargin: 24,
-});
 
 
 // 로딩창
@@ -174,37 +125,10 @@ star.forEach(st => {
 const brand_menuBtnList = document.querySelectorAll('.brand-menuBtnList li');
 const BrandList = document.querySelectorAll('.BrandList li');
 
-console.log(brandSlider2);
 brand_menuBtnList.forEach((tab, idx) => {
     tab.addEventListener('click', () => {
 
         const target = document.querySelector(tab.dataset.target);
-        console.log(target);
-        console.log(idx);
-
-        switch(idx){
-            case 0:
-                brandSlider1.reloadSlider();
-                break;
-            case 1:
-                brandSlider2.reloadSlider();
-                break;
-            case 2:
-                brandSlider3.reloadSlider();
-                break;
-            case 3:
-                brandSlider4.reloadSlider();
-                break;
-            case 4:
-                brandSlider5.reloadSlider();
-                break;
-            case 5:
-                brandSlider6.reloadSlider();
-                break;
-            case 6:
-                brandSlider7.reloadSlider();
-                break;
-        }
 
         BrandList.forEach((tc) => {
             tc.classList.remove('active');
